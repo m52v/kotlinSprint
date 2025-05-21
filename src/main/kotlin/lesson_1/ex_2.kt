@@ -7,10 +7,10 @@ fun main () {
     println("Количество заказов: $totalOrders")
     println(messageAfterOrder)
 
-    var sumEmployees = 2000
-    println("Количество работников: $sumEmployees")
+    var countEmployees = 2000
+    println("Количество работников: $countEmployees")
 
-    sumEmployees = 1999
-    println("Актуальное кол-во работников: $sumEmployees")
+    countEmployees = 1999
+    println("Актуальное кол-во работников: $countEmployees")
 
 }
