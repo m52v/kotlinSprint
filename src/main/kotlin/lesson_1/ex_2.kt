@@ -1,6 +1,6 @@
 package org.example.lesson_1
 
-fun main () {
+fun main() {
 
     val totalOrders = 75
     val messageAfterOrder = "Спасибо за заказ! Приходите еще:)"
