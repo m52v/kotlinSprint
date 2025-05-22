@@ -1,6 +1,6 @@
 package org.example.lesson_2
 
-fun main () {
+fun main() {
 
     val totalEmployees = 50
     val salaryOfOneEmployee = 30_000
@@ -15,5 +15,4 @@ fun main () {
 
     val averageSalary = totalSalaryCoast / (totalEmployees + totalInterns)
     println("Средняя ЗП на человека в компании: $averageSalary₽")
-
 }
