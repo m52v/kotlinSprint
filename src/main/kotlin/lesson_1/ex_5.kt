@@ -1,18 +1,16 @@
 package org.example.lesson_1
 
-const val SECONDS_IN_MINUTE = 60
-const val MINUTES_IN_HOUR = 60
+const val TIME_UNIT = 60
+
 fun main() {
     val totalSeconds = 6480
 
-    val hours = totalSeconds / (SECONDS_IN_MINUTE * MINUTES_IN_HOUR)
-    val secondsAfterHours = totalSeconds - (hours * SECONDS_IN_MINUTE * MINUTES_IN_HOUR)
+    val hours = totalSeconds / (TIME_UNIT * TIME_UNIT)
+    val secondsAfterHours = totalSeconds % (TIME_UNIT * TIME_UNIT)
 
-    val minutes = secondsAfterHours / SECONDS_IN_MINUTE
-    val secondsAfterMinutes = secondsAfterHours - (minutes * SECONDS_IN_MINUTE)
+    val minutes = secondsAfterHours / TIME_UNIT
 
-    val seconds = secondsAfterMinutes
+    val seconds = secondsAfterHours % TIME_UNIT
 
-    val result = String.format("%02d:%02d:%02d", hours, minutes, seconds)
-    println(result)
+    println("%02d:%02d:%02d".format(hours, minutes, seconds))
 }
