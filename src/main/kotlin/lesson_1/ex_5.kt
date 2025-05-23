@@ -11,6 +11,5 @@ fun main() {
     val minutes = secondsAfterHours / TIME_UNIT
 
     val seconds = secondsAfterHours % TIME_UNIT
-
     println("%02d:%02d:%02d".format(hours, minutes, seconds))
 }
