@@ -7,7 +7,8 @@ fun main() {
     val student3 = 3
     val student4 = 5
 
-    val averageGradeEnglish = (student1 + student2 + student3 + student4) / 4.0
-
-    println("Средний балл по английскому в классе: $averageGradeEnglish")
+    val studentCount = 4
+    val totalScore = student1 + student2 + student3 + student4
+    val average = totalScore / studentCount.toDouble()
+    println("%.2f".format(average))
 }
