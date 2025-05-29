@@ -1,8 +1,9 @@
 package org.example.lesson_4
 
+const val TOTAL_TABLES = 13
+
 fun main() {
 
-    val TOTAL_TABLES = 13
     val bookedToday = 13
     val bookedTomorrow = 9
 
